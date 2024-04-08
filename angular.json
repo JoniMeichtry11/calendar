@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -90,10 +91,28 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/pink-bluegrey.css",
               "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "calendar:build:production",
+              "serveTarget": "calendar:serve:production"
+            },
+            "development": {
+              "buildTarget": "calendar:build:development",
+              "serveTarget": "calendar:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

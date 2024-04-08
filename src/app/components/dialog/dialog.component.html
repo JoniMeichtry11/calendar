@@ -1,0 +1,15 @@
+<h1>Crear una tarea</h1>
+<div>
+  <label id="name">Nombre</label>
+  <input for="name" [(ngModel)]="data.name" placeholder="Hacer ejercicio ..." />
+  <label id="color">Color</label>
+  <select for="color" [(ngModel)]="data.color">
+    <option *ngFor="let color of data.colors" [value]="color">
+      {{ color }}
+    </option>
+  </select>
+</div>
+<div>
+  <button (click)="dialogRef.close(data)">OK</button>
+  <button (click)="dialogRef.close()">Cancel</button>
+</div>

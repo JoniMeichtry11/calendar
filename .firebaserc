@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "listtasks-c0977": {
+      "hosting": {
+        "calendar": [
+          "calendar-joni"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "listtasks-c0977"
+  }
+}
