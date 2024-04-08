@@ -1,14 +1,3 @@
-- Darle estilos al calendario.
+#My calendar
 
-- Hacer build y deploy.
-
-
-------
-
-adicion:
-
-agregar un spinner
-
-toast con mensajes
-
-agregar un mensaje de confirmación de cambios para guardar antes de que se pierdan los cambios.
+Welcome to my calendar app.
