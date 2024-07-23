@@ -4,7 +4,7 @@
   <input for="name" [(ngModel)]="data.name" placeholder="Hacer ejercicio ..." />
   <label id="color">Color</label>
   <select for="color" [(ngModel)]="data.color">
-    <option *ngFor="let color of data.colors" [value]="color">
+    <option [class]="color" *ngFor="let color of data.colors" [value]="color">
       {{ color }}
     </option>
   </select>
